@@ -67,7 +67,7 @@ function Product() {
   }
     return (
         <>
-            <div className="container">
+            <div className="container pt-5 mt-5">
                 <h2 className='py-3 '>ALL Products</h2>
                 <div className="container px-0 d-flex my-3">
                     <div className="col-6">
@@ -94,7 +94,7 @@ function Product() {
                 </div>
                 <div className="row ">
                     {products.map((product) => (
-                        <div key={product.id} className="col-4 cards ">
+                        <div key={product.id} className="col-md-6 col-6 col-lg-3 cards ">
                             <div className="card animate__animated animate__fadeIn">
                                 <Image src={product.thumbnail} className='imageofcard' alt={product.title} />
                                 <div className='sme1'>
