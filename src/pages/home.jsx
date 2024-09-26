@@ -22,13 +22,13 @@ function Home() {
   return (
     <>
       {/* Carousel */}
-      <div className="container-fluid sec1">
+      <div className="container-fluidsec1 mt-5 pt-5">
       <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
+        <div className="carousel-inner ">
           <div className="carousel-item active" data-bs-interval={5000}>
           <section className="text-dark body-font">
-      <div className="container mx-auto d-flex py-5 flex-md-row justify-content-around ">
-        <div className="col-md-6 animate__animated animate__fadeInUp d-flex flex-column align-items-md-start justify-content-center align-items-center text-center text-md-start mb-5 mb-md-0">
+      <div className="container mx-auto d-flex py-5 flex-lg-row  flex-column justify-content-around ">
+        <div className="col-md-6  animate__animated animate__fadeInUp d-flex flex-column align-items-md-start justify-content-center align-items-center text-center text-md-start mb-5 mb-md-0">
           <h5 className=" mb-2 fw-medium text-dark">
             SOUNDBOX
           </h5>
@@ -53,7 +53,7 @@ function Home() {
           </div>
           <div className="carousel-item active" data-bs-interval={5000}>
           <section className="text-dark body-font">
-      <div className="container mx-auto d-flex py-5 flex-md-row justify-content-around ">
+      <div className="container mx-auto d-flex py-5 flex-lg-row  flex-column justify-content-around">
         <div className="col-md-6 animate__animated animate__fadeInUp d-flex flex-column align-items-md-start justify-content-center align-items-center text-center text-md-start mb-5 mb-md-0">
           <h5 className=" mb-2 fw-medium text-dark">
             SOUNDBOX
@@ -70,7 +70,7 @@ function Home() {
             </button>
           </div>
         </div>
-        <div className="col-md-6 animate__animated animate__fadeInDown col-12 d-flex justify-content-end">
+        <div className="col-md-6 animate__animated animate__fadeInDown col-12 d-flex justify-content-lg-end justify-content-center">
           <img className="img-fluid rounded i1" alt="hero" src={Image1} />
      
         </div>
@@ -103,9 +103,9 @@ function Home() {
       {/* Features Section (Product Cards) */}
       <div className="container">
       <h2>Featured Products</h2>
-      <div className="row">
+      <div className="row d-flex justify-content-center">
         {products.map((product) => (
-          <div key={product.id} className="col-3 cards">
+          <div key={product.id} className="col-md-6 col-6 col-lg-3 cards">
             <div className="card">
               <Image src={product.thumbnail} className='imageofcard' alt={product.title} />
             <div className='sme1'>
